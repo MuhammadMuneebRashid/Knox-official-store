@@ -1,0 +1,568 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+
+  #masthead, header.site-header, .site-header, .main-navigation, .entry-title, .page-title, header.entry-header, #wpadminbar, .ast-breadcrumbs-wrapper, .ast-header-break-point, header, .header-container, .elementor-location-header, .site-branding {
+    display: none !important;
+  }
+
+  html, body {
+    background-color: #020202 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth !important;
+  }
+
+  .knox-shop-root {
+    background-color: #020202 !important;
+    color: #e5e5e5 !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    width: 100vw !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    margin-top: 0px !important;
+  }
+
+  .knox-top-nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 25px 60px !important;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2) !important;
+    background: rgba(2, 2, 2, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 99999 !important;
+  }
+
+  .knox-top-brand {
+    color: #fff !important;
+    font-family: 'Cinzel', serif !important;
+    font-size: 1.3rem !important;
+    letter-spacing: 4px !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+  }
+
+  .knox-top-links {
+    display: flex !important;
+    gap: 35px !important;
+  }
+
+  .knox-top-links a {
+    color: #d4af37 !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    font-size: 0.8rem !important;
+    letter-spacing: 2px !important;
+    font-weight: 500 !important;
+    transition: color 0.3s ease !important;
+  }
+
+  .knox-top-links a:hover {
+    color: #fff !important;
+  }
+
+  .knox-hero {
+    position: relative !important;
+    text-align: center !important;
+    padding: 140px 20px !important;
+    min-height: 550px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    border-bottom: 1px solid #1a1a1a !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background-color: #020202 !important;
+  }
+
+  .knox-bg-video {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1 !important;
+    object-fit: cover !important;
+  }
+
+  .knox-hero-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(180deg, rgba(2,2,2,0.6) 0%, rgba(2,2,2,0.85) 100%) !important;
+    z-index: 2 !important;
+  }
+
+  .knox-hero-content {
+    position: relative !important;
+    z-index: 3 !important;
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+  }
+
+  .knox-hero span {
+    font-family: 'Cinzel', serif !important;
+    color: #d4af37 !important;
+    font-size: 0.8rem !important;
+    letter-spacing: 8px !important;
+    text-transform: uppercase !important;
+    display: block !important;
+    margin-bottom: 15px !important;
+    font-weight: 600 !important;
+  }
+
+  .knox-hero h1 {
+    font-family: 'Cinzel', serif !important;
+    color: #ffffff !important;
+    font-size: 3rem !important;
+    letter-spacing: 4px !important;
+    margin: 0 0 20px 0 !important;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.8) !important;
+  }
+
+  .gold-divider {
+    width: 100px !important;
+    height: 2px !important;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent) !important;
+    margin: 0 auto 25px auto !important;
+  }
+
+  .knox-hero p {
+    color: #cccccc !important;
+    font-size: 1.1rem !important;
+    max-width: 750px !important;
+    margin: 0 auto !important;
+    line-height: 1.8 !important;
+    font-weight: 300 !important;
+  }
+
+  .knox-section-header {
+    text-align: center !important;
+    max-width: 900px !important;
+    margin: 60px auto 20px auto !important;
+    padding: 0 20px !important;
+  }
+
+  .knox-section-header span {
+    color: #d4af37 !important;
+    font-size: 0.75rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 5px !important;
+    display: block !important;
+    margin-bottom: 10px !important;
+    font-weight: 600 !important;
+  }
+
+  .knox-section-header h2 {
+    font-family: 'Cinzel', serif !important;
+    color: #fff !important;
+    font-size: 2.2rem !important;
+    letter-spacing: 2px !important;
+    margin: 0 0 15px 0 !important;
+  }
+
+  .knox-section-header p {
+    color: #999 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .knox-products-container {
+    max-width: 1200px !important;
+    margin: 40px auto 60px auto !important;
+    padding: 0 20px !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
+  }
+
+  .knox-card {
+    background: linear-gradient(145deg, #080808 0%, #030303 100%) !important;
+    border: 1px solid #1c1c1c !important;
+    border-top: 3px solid #d4af37 !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+  }
+
+  .knox-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15) !important;
+    border-color: #333 !important;
+  }
+
+  .knox-img-wrap {
+    background: radial-gradient(circle at center, #111 0%, #020202 100%) !important;
+    height: 300px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px !important;
+    border-bottom: 1px solid #141414 !important;
+    box-sizing: border-box !important;
+  }
+
+  .knox-img-wrap img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    transition: transform 0.4s ease !important;
+  }
+
+  .knox-card:hover .knox-img-wrap img {
+    transform: scale(1.05) !important;
+  }
+
+  .knox-card-body {
+    padding: 25px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    justify-content: space-between !important;
+    text-align: center !important;
+  }
+
+  .knox-card-category {
+    font-size: 0.72rem !important;
+    color: #d4af37 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2.5px !important;
+    margin-bottom: 8px !important;
+    font-weight: 600 !important;
+  }
+
+  .knox-card-title {
+    font-family: 'Cinzel', serif !important;
+    color: #fff !important;
+    font-size: 1.15rem !important;
+    margin: 0 0 10px 0 !important;
+    letter-spacing: 1px !important;
+  }
+
+  .knox-card-desc {
+    color: #999 !important;
+    font-size: 0.85rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+    font-weight: 300 !important;
+  }
+  
+  .knox-price-box {
+    margin-bottom: 20px !important;
+  }
+
+  .knox-original-price {
+    font-size: 0.95rem !important;
+    color: #777 !important;
+    text-decoration: line-through !important;
+    margin-right: 10px !important;
+  }
+
+  .knox-card-price {
+    font-family: 'Cinzel', serif !important;
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    color: #f3e5ab !important;
+    letter-spacing: 1px !important;
+    display: inline-block !important;
+  }
+
+  .knox-btn-row {
+    display: flex !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .k-btn {
+    flex: 1 !important;
+    padding: 14px 10px !important;
+    font-size: 0.72rem !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    border-radius: 6px !important;
+    letter-spacing: 1.5px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .btn-cart {
+    background: linear-gradient(135deg, #d4af37 0%, #aa8c2c 100%) !important;
+    color: #020202 !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(212,175,55,0.2) !important;
+  }
+
+  .btn-cart:hover {
+    background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 100%) !important;
+  }
+
+  .btn-wa {
+    background: transparent !important;
+    color: #25d366 !important;
+    border: 2px solid #25d366 !important;
+  }
+
+  .btn-wa:hover {
+    background: #25d366 !important;
+    color: #ffffff !important;
+  }
+
+  .knox-brand-philosophy {
+    max-width: 1100px !important;
+    margin: 80px auto !important;
+    background: linear-gradient(145deg, #070707 0%, #030303 100%) !important;
+    border: 1px solid #1c1c1c !important;
+    border-left: 5px solid #d4af37 !important;
+    padding: 55px 50px !important;
+    border-radius: 10px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6) !important;
+  }
+
+  .philosophy-title {
+    font-family: 'Cinzel', serif !important;
+    color: #fff !important;
+    font-size: 1.8rem !important;
+    margin-bottom: 20px !important;
+    letter-spacing: 3px !important;
+  }
+
+  .philosophy-text {
+    color: #b0b0b0 !important;
+    font-size: 1.02rem !important;
+    line-height: 2 !important;
+    font-weight: 300 !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+  }
+
+  .knox-luxury-footer-wrap {
+    background-color: #010101 !important;
+    color: #ffffff !important;
+    padding: 70px 80px 30px 80px !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    border-top: 1px solid #1c1c1c !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin-top: 80px !important;
+  }
+
+  .knox-footer-container {
+    max-width: 1450px !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr !important;
+    gap: 50px !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+  }
+
+  .knox-footer-col h3, .knox-footer-col h4 {
+    font-family: 'Cinzel', serif !important;
+    color: #d4af37 !important;
+    margin-bottom: 20px !important;
+    letter-spacing: 2px !important;
+    font-size: 1.1rem !important;
+  }
+
+  .knox-footer-col p, .knox-footer-col ul {
+    font-size: 0.88rem !important;
+    color: #999 !important;
+    line-height: 1.7 !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-weight: 300 !important;
+  }
+
+  .knox-footer-col ul li { margin-bottom: 10px !important; }
+  .knox-footer-col ul li a { color: #999 !important; text-decoration: none !important; transition: color 0.3s ease !important; }
+  .knox-footer-col ul li a:hover { color: #d4af37 !important; }
+
+  .knox-footer-bottom {
+    max-width: 1450px !important;
+    margin: 50px auto 0 auto !important;
+    text-align: center !important;
+    border-top: 1px solid #161616 !important;
+    padding-top: 25px !important;
+    font-size: 0.75rem !important;
+    color: #666 !important;
+    letter-spacing: 1px !important;
+  }
+
+  @media (max-width: 768px) {
+    .knox-hero {
+      min-height: 420px !important;
+      padding: 70px 15px !important;
+    }
+    .knox-bg-video {
+      object-fit: fill !important;
+    }
+    .knox-hero h1 {
+      font-size: 2.1rem !important;
+      letter-spacing: 2px !important;
+    }
+    .knox-products-container { grid-template-columns: 1fr !important; }
+    .knox-top-nav { padding: 15px 20px !important; flex-direction: column !important; gap: 12px !important; }
+    .knox-footer-container { grid-template-columns: 1fr 1fr !important; gap: 30px !important; text-align: center !important; }
+    .knox-luxury-footer-wrap { padding: 40px 20px 20px 20px !important; }
+  }
+</style>
+
+<div class="knox-shop-root">
+  <div class="knox-top-nav">
+    <a href="https://knoxoffical.com/home/" class="knox-top-brand">KNOX OFFICIAL</a>
+    <div class="knox-top-links">
+      <a href="https://knoxoffical.com/home/">Home</a>
+      <a href="https://knoxoffical.com/shop/">Shop</a>
+      <a href="https://knoxoffical.com/cart/">🛒 Cart</a>
+    </div>
+  </div>
+
+  <header class="knox-hero">
+    <video autoplay muted loop playsinline class="knox-bg-video">
+      <source src="https://knoxoffical.com/wp-content/uploads/2026/09/Knox-Vedio.mp4" type="video/mp4">
+    </video>
+    <div class="knox-hero-overlay"></div>
+    <div class="knox-hero-content">
+      <span>Heritage of Distinction</span>
+      <h1>Uncompromised Luxury &amp; Utility</h1>
+      <div class="gold-divider"></div>
+      <p>Engineered for the elite. Discover our signature collection of aerospace-grade metal wallets and long-lasting Extrait de Parfums, crafted to make a lasting statement.</p>
+    </div>
+  </header>
+
+  <div class="knox-section-header">
+    <span>Handcrafted Masterpieces</span>
+    <h2>The Flagship Collection</h2>
+    <p>Explore our exclusive drops, backed by nationwide Cash on Delivery across Pakistan.</p>
+  </div>
+
+  <div class="knox-products-container">
+    <div class="knox-card">
+      <div class="knox-img-wrap">
+        <img src="https://knoxoffical.com/wp-content/uploads/2026/09/wallet-front.jpeg" alt="Metal Wallet">
+      </div>
+      <div class="knox-card-body">
+        <div>
+          <span class="knox-card-category">Metal Wallet</span>
+          <h2 class="knox-card-title">Metal Pop-Up Wallet</h2>
+          <p class="knox-card-desc">Aerospace aluminium with instant card ejection &amp; RFID defense.</p>
+          <div class="knox-price-box">
+            <span class="knox-original-price">Rs. 1,499</span>
+            <span class="knox-card-price">Rs. 999</span>
+          </div>
+        </div>
+        <div class="knox-btn-row">
+          <a href="https://knoxoffical.com/cart/?add-to-cart=91" class="k-btn btn-cart">Add to Cart</a>
+          <a href="https://wa.me/923264245736?text=Hi%20KNOX,%20I%20want%20to%20order%20Metal%20Pop-Up%20Wallet%20for%20Rs.999" target="_blank" class="k-btn btn-wa">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="knox-card">
+      <div class="knox-img-wrap">
+        <img src="https://knoxoffical.com/wp-content/uploads/2026/09/image.jpg" alt="Legacy White Oud">
+      </div>
+      <div class="knox-card-body">
+        <div>
+          <span class="knox-card-category">Extrait de Parfum</span>
+          <h2 class="knox-card-title">KNOX Legacy White Oud</h2>
+          <p class="knox-card-desc">Rich smoky woods, exotic spices, and warm amber formulation.</p>
+          <div class="knox-price-box">
+            <span class="knox-original-price">Rs. 2,999</span>
+            <span class="knox-card-price">Rs. 2,499</span>
+          </div>
+        </div>
+        <div class="knox-btn-row">
+          <a href="https://knoxoffical.com/cart/?add-to-cart=13" class="k-btn btn-cart">Add to Cart</a>
+          <a href="https://wa.me/923264245736?text=Hi%20KNOX,%20I%20want%20to%20order%20KNOX%20Legacy%20for%20Rs.2,499" target="_blank" class="k-btn btn-wa">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="knox-card">
+      <div class="knox-img-wrap">
+        <img src="https://knoxoffical.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-24-at-3.19.45-PM.jpeg" alt="Knox Royale">
+      </div>
+      <div class="knox-card-body">
+        <div>
+          <span class="knox-card-category">Extrait de Parfum</span>
+          <h2 class="knox-card-title">KNOX Royale Opulent</h2>
+          <p class="knox-card-desc">Majestic blend featuring deep royal oud and nocturnal florals.</p>
+          <div class="knox-price-box">
+            <span class="knox-original-price">Rs. 3,299</span>
+            <span class="knox-card-price">Rs. 2,699</span>
+          </div>
+        </div>
+        <div class="knox-btn-row">
+          <a href="https://knoxoffical.com/cart/?add-to-cart=105" class="k-btn btn-cart">Add to Cart</a>
+          <a href="https://wa.me/923264245736?text=Hi%20KNOX,%20I%20want%20to%20order%20KNOX%20Royale%20for%20Rs.2,699" target="_blank" class="k-btn btn-wa">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="knox-brand-philosophy">
+    <h3 class="philosophy-title">The KNOX Standard of Excellence</h3>
+    <p class="philosophy-text">At KNOX Official, we bridge the gap between heavy-duty engineering and refined elegance. Every piece in our catalog—from our ultra-slim RFID blocking wallets to our high-concentration extrait de parfums—undergoes rigorous quality testing to ensure absolute perfection. Backed by reliable nationwide Cash on Delivery across Pakistan.</p>
+  </div>
+
+  <footer class="knox-luxury-footer-wrap">
+    <div class="knox-footer-container">
+      <div class="knox-footer-col">
+        <h3>KNOX Official</h3>
+        <p>Heritage of Distinction. Premium minimalist luxury goods designed for modern individuals across Pakistan.</p>
+      </div>
+
+      <div class="knox-footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://knoxoffical.com/shop/">Shop Collection</a></li>
+          <li><a href="https://knoxoffical.com/about/">About Us</a></li>
+          <li><a href="https://knoxoffical.com/contact/">Contact Us</a></li>
+          <li><a href="https://knoxoffical.com/cart/">Shopping Cart</a></li>
+        </ul>
+      </div>
+
+      <div class="knox-footer-col">
+        <h4>Support & Help</h4>
+        <ul>
+          <li><a href="https://wa.me/message/ZECHGYLV4C3SE1" target="_blank">WhatsApp Assistance</a></li>
+          <li><a href="https://knoxoffical.com/shipping-policy/">Shipping & Delivery</a></li>
+        </ul>
+      </div>
+
+      <div class="knox-footer-col">
+        <h4>Connect</h4>
+        <p>Experience the heritage of distinction. Follow our journey across Pakistan.</p>
+      </div>
+    </div>
+    <div class="knox-footer-bottom">
+      &copy; 2026 KNOX Official. All Rights Reserved. Engineered for Distinction.
+    </div>
+  </footer>
+</div>
