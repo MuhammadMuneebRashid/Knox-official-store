@@ -1,26 +1,35 @@
-# 👑 Knox Official - Luxury E-Commerce Landing Page
+# KNOX Official — Luxury E-Commerce Landing Page
 
-A high-end, luxury aesthetic e-commerce landing page built for **Knox Official**, featuring flagship products including aerospace-grade metal pop-up wallets and long-lasting Extrait de Parfums like *Knox Royale* and *Knox Legacy White Oud*.
+A high-end, responsive luxury e-commerce landing page and product catalog built for a modern men's minimalist brand, featuring a dark matte black and gold aesthetic with direct cart integration and WhatsApp ordering workflows.
 
-## 🚀 Live Demonstration
-Explore the live, production-ready website here: [knoxoffical.com](https://knoxoffical.com)
-
----
-
-## 🛠️ Tech Stack & Architecture
-* **Frontend:** HTML5, CSS3, JavaScript (Custom styling, modern CSS Grid/Flexbox layouts, responsive design).
-* **Styling & Fonts:** Google Fonts (`Cinzel` for high-end luxury typography, `Plus Jakarta Sans` for body readability).
-* **Media Integration:** Cinematic video background optimization for both desktop and mobile viewports.
-* **Platform Integration:** Direct cart integration and direct-to-WhatsApp automated ordering systems for seamless conversion.
+## 🌟 Brand Aesthetic & Features
+* **Theme:** Dark Luxury, Minimalist Brutalism, "Heritage of Distinction".
+* **Responsive Design:** Fully optimized layout for mobile screens (9:16 vertical styling support) and desktop grids.
+* **Cinematic Hero Section:** Active background video integration with smooth scaling across all viewports.
+* **Conversion Focused:** Built-in direct Add-to-Cart WooCommerce query structures and instant WhatsApp checkout buttons.
 
 ---
 
-## 📂 Code Structure Overview
-```text
-knox-official-store/
-│
-├── index.html          # Main landing page (Header, Hero video section, Product Grid, Philosophy, Footer)
-├── style.css           # Custom CSS styling (Dark luxury theme, gold accents, mobile responsive queries)
-└── assets/             # Product imagery, logos, and background video files
-```
-Developed and maintained by Muhammad Muneeb Rashid, an AI Automation Developer and Tech Entrepreneur bridging the gap between advanced workflow automations (Python, n8n, APIs) and real-world e-commerce execution.
+## 🛍️ Product Catalog Structure
+
+### **Standalone Masterpieces**
+1. **Carbon Fiber & Leather Pop-Up Wallet** — Premium textured casing and compact mechanism.
+2. **Metal Pop-Up Wallet** — Aerospace aluminum chassis with instant card ejection.
+3. **Executive Long Leather Wallet** — Genuine leather bifold with spacious compartments.
+4. **KNOX Legacy White Oud Extrait de Parfum** — Rich smoky woods and warm amber formulation.
+5. **KNOX Royale Opulent Extrait de Parfum** — Majestic blend of deep royal oud and nocturnal florals.
+
+### **Limited Edition Bundles (Exclusive Combos)**
+1. **Exclusive Combo One** — Wallet and Extrait de Parfum pairing.
+2. **Exclusive Combo 2** — High-end carbon utility paired with signature fragrance.
+
+---
+
+## 🛠️ Technical Implementation
+* **Styling:** Custom modular CSS featuring CSS Grid, Flexbox, Google Fonts (*Cinzel* & *Plus Jakarta Sans*), and glassmorphism accents.
+* **SEO Optimized:** Embedded JSON-LD Organization schema markup for search engine indexing.
+
+## 🌐 Official Store Links
+* **Website:** [www.knoxoffical.com](https://knoxoffical.com/)
+* **Customer Support:** Available via WhatsApp & social channels.
+* 
