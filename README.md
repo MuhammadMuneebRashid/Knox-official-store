@@ -32,4 +32,6 @@ A high-end, responsive luxury e-commerce landing page and product catalog built 
 ## 🌐 Official Store Links
 * **Website:** [www.knoxoffical.com](https://knoxoffical.com/)
 * **Customer Support:** Available via WhatsApp & social channels.
-* 
+
+ ##Author
+   Muneeb
